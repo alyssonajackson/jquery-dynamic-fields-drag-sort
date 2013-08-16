@@ -1,0 +1,44 @@
+<!Doctype Html>
+<html>
+
+    <head>
+    	<title>Jquery dynamic fields with DnD support</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+    </head>
+
+    <body>
+
+        <br />
+
+        <div class="container-fluid">
+        	<div class="row-fluid">
+        		<div class="span12">
+                
+                    <button type="button" onclick="create_custom_field($('#container-fields'));" class="btn btn-primary">
+                        <i class="icon icon-white icon-plus"></i>
+                        Create fields
+                    </button>
+
+                    <div class="clearfix"></div>
+
+                    <br />
+                
+                    <form action="#process_fields.php" class="custom-fields">
+
+                        <div id="container-fields" class="span4"></div>
+                    
+                    </form>
+
+                </div>
+        	</div>
+        </div>
+    
+    </body>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.dragsort-0.5.1.min.js"></script>
+    <script type="text/javascript" src="js/behaviors.js"></script>
+    <script type="text/javascript" src="js/helper.js"></script>
+
+</html>
