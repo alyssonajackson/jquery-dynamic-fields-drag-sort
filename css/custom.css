@@ -1,3 +1,24 @@
 input.key{
     border: 0;
 }
+
+/* DnD */
+
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+.placeholder {
+  position: relative;
+  /** More li styles **/
+}
+.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/
+}

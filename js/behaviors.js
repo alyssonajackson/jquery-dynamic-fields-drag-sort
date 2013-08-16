@@ -8,8 +8,8 @@ CustomForm.load = function(context){
 }
 
 CustomForm.behaviors.push(function(context){
-
-
+    $('.sortable-childs').sortable({itemSelector : '.each-field'});
+    $('.example', context).sortable();
 });
 
 $(document).ready(function(){
