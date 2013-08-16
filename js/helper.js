@@ -19,4 +19,5 @@ function create_custom_field(container){
     CustomForm.load(new_field_container_row);
 
     container.append(new_field_container_row);
+    new_field_container_row.find('input:first').trigger('select').focus();
 }
